@@ -1,0 +1,44 @@
+{
+  "name": "TuneFree",
+  "author": "TuneFree",
+  "version": "1.1.0",
+  "description": "基于 TuneFree API (api.tunefree.fun) 的洛雪音乐助手自定义源，聚合各大平台资源。",
+  "id": "tf",
+  "source": {
+    "music": {
+      "getMusicUrl": {
+        "url": "https://api.tunefree.fun/url?id={songmid}&quality={quality}"
+      },
+      "getPic": {
+        "url": "https://api.tunefree.fun/pic?id={songmid}"
+      },
+      "getLyric": {
+        "url": "https://api.tunefree.fun/lrc?id={songmid}"
+      }
+    },
+    "leaderboard": {
+      "getBoards": {
+        "url": "https://api.tunefree.fun/bang/list"
+      },
+      "getBoardMusics": {
+        "url": "https://api.tunefree.fun/bang/songlist?source=all&bangId={boardId}&page={page}"
+      }
+    },
+    "musicSearch": {
+      "search": {
+        "url": "https://api.tunefree.fun/search?source=all&keyword={keywords}&page={page}"
+      }
+    },
+    "songList": {
+      "getTags": {
+        "url": "https://api.tunefree.fun/playlist/tags"
+      },
+      "getSongList": {
+        "url": "https://api.tunefree.fun/playlist/list?page={page}&id={tagId}&sort={sortId}"
+      },
+      "getSongListDetail": {
+        "url": "https://api.tunefree.fun/playlist/detail?id={id}&page={page}"
+      }
+    }
+  }
+}
